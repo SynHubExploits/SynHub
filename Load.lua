@@ -1,17 +1,20 @@
 local player = game.Players.LocalPlayer
-local PlayerGui = player.PlayerGui
-game:GetService("StarterGui"):SetCore("SendNotification", {
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCore("SendNotification", {
     Title = "SynHub",
     Text = "Loading!",
     Duration = 2
 })
 
-Wait(2)
+task.wait(2)
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "SynHub,
-    Text = "Loading Complete!,
+StarterGui:SetCore("SendNotification", {
+    Title = "SynHub",
+    Text = "Loading Complete!",
     Duration = 5
-  })
-Wait(5)
+})
+
+task.wait(5)
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SynHubExploits/SynHub/main/DashBoard.lua"))()
